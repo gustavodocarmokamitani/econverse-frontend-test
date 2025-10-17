@@ -1,0 +1,49 @@
+@import "../../styles/utility/layout";
+@import "../../styles/abstracts/variables";
+
+.section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+
+  .categoriesContainer {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    padding: 39px 0 20px 0;
+  }
+
+  .categoryItem {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+
+    .imageBox {
+      width: 128px;
+      height: 128px;
+      background-color: $color-bg-light;
+      border-radius: 10px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      box-shadow: 0 2px 9px 0 $shadow-sm;
+    }
+
+    .categoryName {
+      margin-top: 15px;
+      font-size: 14px;
+      color: $text-color-primary;
+    }
+
+    &.highlighted {
+      .imageBox {
+        background-color: white;
+      }
+      .categoryName {
+        color: $color-primary;
+        font-weight: 600;
+      }
+    }
+  }
+}

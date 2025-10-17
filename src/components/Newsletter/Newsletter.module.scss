@@ -1,0 +1,84 @@
+@import "../../styles/utility/layout";
+
+.newsletter {
+  display: flex;
+  height: 162px;
+  width: 100%;
+  background-color: $color-cta-dark;
+
+  .container {
+    @extend %u-container;
+    width: 100%;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    .contentText {
+      width: 100%;
+      display: flex;
+      justify-content: start;
+      flex-direction: column;
+
+      h1 {
+        font-size: 32px;
+        color: $color-white;
+        margin: 0;
+      }
+
+      p {
+        width: 73%;
+        font-size: 14px;
+        color: $color-white;
+        margin-top: 8px;
+      }
+    }
+
+    .containerSubscription {
+      width: auto;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+
+      .content {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+
+        .terms {
+          display: flex;
+          align-items: center;
+          margin-left: 0;
+
+          .checkbox {
+            width: 15px;
+            height: 15px;
+            margin-right: 8px;
+          }
+
+          label {
+            font-size: 12px;
+            color: $color-white;
+          }
+        }
+
+        .inputContainer {
+          display: flex;
+          gap: 10px;
+          align-items: center;
+          margin-bottom: 5px;
+
+          .newsletterInput {
+            width: 233px;
+            height: 42px;
+            padding: 0 15px;
+            border-radius: 8px;
+            border: none;
+            box-sizing: border-box;
+            font-size: 14px;
+          }
+        }
+      }
+    }
+  }
+}

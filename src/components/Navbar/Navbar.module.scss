@@ -1,0 +1,21 @@
+@import "../../styles/utility/layout";
+@import "../../styles/abstracts/variables";
+
+.navbar {
+  width: 100%;
+  display: flex;
+  flex-direction: column; 
+
+  .topNavbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 22px;
+  }
+
+  .topNavbarContent {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+  }
+}

@@ -1,0 +1,61 @@
+@import "../../styles/utility/layout";
+@import "../../styles/abstracts/variables";
+
+.footer {
+  display: flex;
+  height: 282px;
+  width: 100%;
+  background-color: $color-bg-light;
+
+  .container {
+    @extend %u-container;
+    width: 100%;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    .contentBrand {
+      width: 33.3%;
+      border-right: 1px solid $shadow-sm;
+    }
+
+    .content {
+      width: 100%;
+      display: flex;
+      justify-content: space-around;
+
+      .column {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+
+        h4 {
+          font-size: 16px;
+          font-weight: 600;
+          margin: 0;
+        }
+
+        a {
+          font-size: 14px;
+          text-decoration: none;
+          color: $color-black;
+        }
+      }
+    }
+  }
+}
+
+.footerText {
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  height: 46.84px;
+
+  p {
+    text-align: center;
+    font-size: 13px;
+    font-weight: 200;
+    color: $color-text-darker;
+  }
+}

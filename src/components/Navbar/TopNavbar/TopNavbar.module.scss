@@ -1,0 +1,15 @@
+@import "../../../styles/abstracts/variables";
+
+.topNavbar {
+  width: 765px;
+  display: flex;
+  justify-content: space-between;
+
+  .content {
+    display: flex;
+    align-items: center;
+    color: $text-color-primary;
+    font-size: 12px;
+    font-weight: 400;
+  }
+}

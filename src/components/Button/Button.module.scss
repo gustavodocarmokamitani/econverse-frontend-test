@@ -1,0 +1,17 @@
+@import "../../styles/abstracts/variables";
+
+button {
+  height: 50px;
+  padding: 0 30px;
+  background-color: $color-secondary;
+  border: none;
+  border-radius: 7px;
+  color: $color-cta-dark;
+  font-weight: 600;
+  font-size: 16px;
+  cursor: pointer;
+
+  &:hover {
+    background-color: darken($color-secondary, 10%);
+  }
+}

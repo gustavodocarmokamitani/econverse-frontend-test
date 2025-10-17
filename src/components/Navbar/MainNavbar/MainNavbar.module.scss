@@ -1,0 +1,46 @@
+@import "../../../styles/abstracts/variables";
+
+.mainNavbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid $color-border-100;
+  height: 72px;
+
+  .searchContainer {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 700px;
+  }
+
+  .searchInput {
+    width: 100%;
+    height: 48px;
+    padding: 0 16px;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    background-color: $color-bg-light;
+    font-family: "Poppins";
+    font-size: 14px;
+  }
+
+  .searchIcon {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+    opacity: 0.6;
+  }
+
+  .options {
+    img {
+      margin-left: 32px;
+    }
+  }
+}

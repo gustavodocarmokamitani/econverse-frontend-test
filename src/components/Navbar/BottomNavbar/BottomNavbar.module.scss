@@ -1,0 +1,20 @@
+@import "../../../styles/abstracts/variables";
+
+.bottomNavbar {
+  height: 40px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: $color-gray-medium;
+  font-weight: 600;
+  font-size: 12px;
+  border-top: 1px solid $color-border-100;
+  box-shadow: 0 8px 16px 0 $shadow-sm;
+  cursor: pointer;
+
+  p {
+    &:hover {
+      color: $text-color-secondary;
+    }
+  }
+}

@@ -1,0 +1,11 @@
+@import "../../styles/utility/layout";
+@import "../../styles/abstracts/variables";
+
+.home {
+  @extend %u-container; 
+
+  .cardContainer {
+    display: flex; 
+    justify-content: space-between;
+  }
+}
