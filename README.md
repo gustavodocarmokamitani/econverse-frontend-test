@@ -1,31 +1,53 @@
-# Teste Econverse: Vaga Desenvolvedor Front-End
+# Econverse Frontend Test
 
-### Vem ser #Econverse!
+Este projeto é uma implementação de uma interface de e-commerce como parte de um desafio de frontend para a Econverse. A aplicação é uma Single Page Application (SPA) desenvolvida com React e TypeScript, focada em apresentar produtos de forma moderna e interativa.
 
-Segue abaixo as instruções para a execução do teste.
+## 🚀 Características do Projeto
 
-## Instruções
-- Faça um fork desse projeto para a sua conta pessoal do GitHub.
-- Desenvolva a página conforme as **Especificações Técnicas** 
-- Crie um README com as instruções para compilar, testar e rodar o projeto.
-- O link do repositório deverá ser enviado para o e-mail ana.nascimento@econverse.com.br com o título **Teste Vaga FrontEnd**
+- **Framework Moderno:** Construído com **React** e **TypeScript**, garantindo um desenvolvimento robusto, tipado e escalável.
+- **Estilização Modular:** Utiliza **SASS (SCSS)** com **CSS Modules**, permitindo a criação de estilos componentizados e evitando conflitos de classes.
+- **Arquitetura Baseada em Componentes:** A interface é dividida em componentes reutilizáveis, facilitando a manutenção e o desenvolvimento.
+- **Dados Estáticos:** As informações dos produtos são carregadas a partir de um arquivo `products.json` local, simulando o consumo de uma API.
 
-## Especificações Técnicas
-- Desenvolver a pagina em React e TypeScript conforme o [layout](https://www.figma.com/file/rWnzPeoxgynuNPsJjV0VmV/Teste-Front-End-Jr?node-id=0%3A1). Para conseguir pegar os elementos do Figma, basta copiar o layout para sua conta que terá acesso de edição.
-- Montar a [vitrine](https://app.econverse.com.br/teste-front-end/junior/tecnologia/layout/vitrine-produtos.png) de produtos consumindo as informações dos produtos em json atraves desse [Link](https://app.econverse.com.br/teste-front-end/junior/tecnologia/lista-produtos/produtos.json).
-- Desenvolver a interação ao clicar em um produto conforme layout. A interação consiste em abrir um modal com as principais informações do produto presente no arquivo [JSON](https://app.econverse.com.br/teste-front-end/junior/tecnologia/lista-produtos/produtos.json) conforme o produto que clicar.
-- Utilizar Pré-processador Sass, Less ou Stylus.
-- Respeitar o Layout pixel a pixel, tamanho das fontes, cores e botões.
-- Não Utilizar bibliotecas UI como Bootstrap, Foundation, ou afins.
+## 🏛️ Arquitetura
 
-## Pontos Extras
-- Utilizar Boas práticas de SEO
-- Uso de HTML semântico
+O projeto segue uma arquitetura de componentização clara e organizada, com uma separação de responsabilidades bem definida.
 
-## O que avaliaremos em seu teste
-- Organização do projeto
-- Lógica do código
-- Componentização
-- Alcance dos objetivos propostos
+- **`src/`**: Diretório raiz do código-fonte da aplicação.
+  - **`components/`**: Contém todos os componentes reutilizáveis da UI (ex: `Header`, `Footer`, `Card`, `Product`, `Modal`). Cada componente possui seu próprio arquivo de lógica (`.tsx`) e de estilo (`.module.scss`).
+  - **`Pages/`**: Abriga as páginas principais da aplicação. A página `Home.tsx` é responsável por montar o layout principal, organizando os diversos componentes.
+  - **`data/`**: Armazena os dados estáticos da aplicação, como o `products.json`.
+  - **`styles/`**: Inclui arquivos de estilo globais e variáveis SASS (`_variables.scss`), que definem a identidade visual do projeto (cores, fontes, etc.).
+  - **`assets/`**: Contém todas as imagens, ícones e outros recursos estáticos.
+  - **`types/`**: Define as interfaces TypeScript (`product.ts`) que garantem a tipagem e a consistência dos dados em toda a aplicação.
+  - **`App.tsx`**: Componente raiz que renderiza a página principal e atua como ponto de entrada da aplicação.
 
-**Boa sorte! ;)**
+## ✨ Funcionalidades
+
+- **Navegação Principal:** Barra de navegação superior e principal com links e ícones.
+- **Carrossel de Produtos:** Seção principal que exibe os produtos em um carrossel com navegação horizontal.
+- **Modal de Detalhes do Produto:** Ao clicar em um produto, um modal é aberto exibindo informações detalhadas, como imagem, nome, preço e um seletor de quantidade.
+- **Seções de Categoria:** Exibição de banners para diferentes categorias de produtos.
+- **Newsletter:** Formulário para inscrição na newsletter.
+- **Rodapé:** Apresenta informações adicionais e links úteis.
+
+## 📝 Responsabilidades
+
+As principais responsabilidades durante o desenvolvimento deste projeto foram:
+
+- **Componentização:** Criar componentes React que sejam reutilizáveis, independentes e fáceis de manter.
+- **Tipagem:** Utilizar TypeScript para garantir a segurança dos tipos, especialmente na manipulação dos dados dos produtos.
+- **Gerenciamento de Estado Local:** Controlar o estado dos componentes (como a visibilidade do modal ou a quantidade de itens) utilizando React Hooks (`useState`, `useRef`).
+- **Estilização Escalável:** Estruturar o SASS de forma organizada, utilizando variáveis e o padrão de CSS Modules para escopar os estilos.
+- **Estrutura do Projeto:** Manter uma organização de arquivos e pastas que facilite a navegação e a compreensão do código.
+
+## 🧠 Aprendizados
+
+A realização deste projeto proporcionou uma excelente oportunidade para aplicar e aprofundar conhecimentos em tecnologias e conceitos essenciais do desenvolvimento frontend moderno:
+
+- **Estruturação de um projeto React do zero:** Aplicação prática dos conceitos de `create-react-app` e organização de uma base de código limpa.
+- **Componentização avançada:** Prática na criação de componentes funcionais e na comunicação entre eles através de `props`.
+- **TypeScript em um ambiente React:** Fortalecimento do uso de interfaces para modelar dados e `props`, aumentando a previsibilidade e a robustez do código.
+- **Técnicas de estilização com SASS e CSS Modules:** Experiência na criação de um sistema de design coeso com variáveis SASS e na prevenção de vazamento de estilos.
+- **Manipulação de estado e eventos:** Uso prático de hooks como `useState` e `useRef` para criar interatividade e controlar o ciclo de vida dos componentes.
+- **Simulação de consumo de API:** Compreensão de como trabalhar com dados locais (JSON) como uma alternativa para o desenvolvimento do frontend antes da integração com um backend.
